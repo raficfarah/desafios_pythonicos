@@ -12,13 +12,13 @@ Exemplo: 'The dinner is not that bad!' retorna 'The dinner is good!'
 
 def not_bad(s):
     # +++ SUA SOLUÇÃO +++
-    not_ = s.find('not')
-    bad_ = s.find('bad')
+    temp = s
 
+    not_, bad_ = s.find('not'), s.find('bad')
     if not_ < bad_:
-        return s.replace(s[not_:bad_ + 3], 'good')
-    else:
-        return s
+        temp = s.replace(s[not_:bad_ + 3], 'good')
+    # elif  temp.count('not') > 1:  (tentativa de fazer not_bad() funcionar a partir do segundo 'not'.
+    return temp
 
 # --- Daqui para baixo são apenas códigos auxiliáries de teste. ---
 
@@ -45,3 +45,6 @@ if __name__ == '__main__':
     test(not_bad, 'This dinner is not that bad!', 'This dinner is good!')
     test(not_bad, 'This tea is not hot', 'This tea is not hot')
     test(not_bad, "It's bad yet not", "It's bad yet not")
+    test(not_bad, "It's not bad not", "It's good not")
+    test(not_bad, "It's not not bad", "It's good")
+    test(not_bad, "It's not bad not bad", "It's good good")
