@@ -23,8 +23,6 @@ def front_x(words):
 
     return sorted(x_in) + sorted(x_not)
 
-    
-
 '''
     x_in.extend(x_not)
     return x_not
