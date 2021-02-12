@@ -15,10 +15,6 @@ from math import ceil
 
 def front_back(a, b):
     # +++ SUA SOLUÇÃO +++
-    stra = a
-    strb = b
-
-
     if len(a)%2 != 0:
         stra1 = a[:ceil(len(a)/2)]
         stra2 = a[ceil(len(a)/2):]
