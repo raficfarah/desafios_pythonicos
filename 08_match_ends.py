@@ -11,18 +11,16 @@ PS: Python não possui o operador ++, porém += funciona.
 def match_ends(words):
     # +++ SUA SOLUÇÃO +++
     # List Comprehension
-    list = words
-    temp = [i for i in list if len(i) >= 2 and i[0] == i[-1]]
+    temp = [i for i in words if len(i) >= 2 and i[0] == i[-1]]
 
     return len(temp)
 
 
     #Loop for
     '''
-    list = words
-
     c = 0
-    for i in list:
+    
+    for i in words:
         if len(i) >= 2 and i[0] == i[-1]:
             c += 1
 
