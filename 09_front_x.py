@@ -21,9 +21,9 @@ def front_x(words):
         elif not i.startswith('x'):
             x_not.append(i)
 
-    list = sorted(x_in) + sorted(x_not)
+    return sorted(x_in) + sorted(x_not)
 
-    return list
+    
 
 '''
     x_in.extend(x_not)
