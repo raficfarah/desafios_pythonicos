@@ -34,8 +34,8 @@ def front_back(a, b):
         strb2 = b[int(len(b)/2):]
 
 
-    conc = stra1 + strb1 + stra2 + strb2
-
+    conc = ''.join((stra1, strb1, stra2, strb2))
+    
     return conc
 
 front_back('banana', 'pinto')
