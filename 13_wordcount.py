@@ -97,6 +97,7 @@ def print_top(filename):
         print(key[index],value[index])
         index += 1
 
+    f.close()
 
 # A função abaixo chama print_words() ou print_top() de acordo com os
 # parêtros do programa.
