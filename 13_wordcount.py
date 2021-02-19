@@ -79,12 +79,10 @@ def print_words(filename):
 
     f.close()
 
-
 def print_top(filename):
     f = open(filename)
     read_f = lower_case(f.read())
     sorted_list_f = sorted(read_f.split())
-
     tuple_list = frequency(sorted_list_f)
 
     key = []
